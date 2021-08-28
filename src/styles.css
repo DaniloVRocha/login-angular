@@ -1,1 +1,8 @@
 /* You can add global styles to this file, and also import other style files */
+.bg-img{
+    background-image: url('https://images4.alphacoders.com/287/thumb-1920-287214.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+}

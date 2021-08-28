@@ -1,0 +1,30 @@
+<section>
+    <div class="cabecalho">
+
+    </div>
+
+</section>
+<h2>NewsApi</h2>
+
+<div class="container-fluid">
+    <h5>Bem Vindo ...</h5>
+    <button (click)="logout();" class="btn btn-outline-light">Sair</button>
+</div>
+<hr>
+<div class="container-fluid">
+<div class="row mt-5">
+    <div class="col-md-4 card-group mb-3 mt-5" *ngFor='let a of artigos'>
+        <div class="card">
+            <div class="card-body">
+                <img [src] = 'a.urlToImage' class = "img-thumbnail img-responsive w-100">
+                <p>{{a.title}}</p>
+                <p class="small">{{a.author}}</p>
+                <p class = "text-justify">{{a.content}}</p>
+                <a href="{{a.url}}">Leia Mais </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+</div>
